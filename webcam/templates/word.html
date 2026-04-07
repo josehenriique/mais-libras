@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head'%}
+    <link rel="stylesheet" href="{% static 'css/word/word.css' %}">
+{% endblock %}
+
+{% block 'title' %} Words {% endblock %}
+
+{% block 'content' %}
+
+<section id="container">
+    <div class="texts">
+      <h1 class="title">Criador de Palavras</h1>
+      <p>Teste as letras do alfabeto e forme <span class="text-bold">suas próprias palavras</span> através de gestos!</p>
+    </div>
+
+    <div class="content">
+      <div class="camera">
+        <div class="image-container">
+          <img class="video" src="" alt="">
+          <img class="camera-icon" src="{% static 'assets/camera.svg' %}" alt="" srcset="">
+        </div>
+
+        <h1 class="title letter"></h1>
+      </div>
+
+      <div class="words">
+        <div class="texts">
+          <p>Pressione <span class="tecla">Backspace</span> para <span class="text-bold">apagar um carctere</span></p>
+          <p>Pressione <span class="tecla">Q</span> para <span class="text-bold">apagar todas os caracteres</span></p>
+        </div>
+
+        <div class="words-container">
+          <p class="title"></p>
+        </div>
+
+        <button class="btn delete">Apagar palavra</button>
+      </div>
+    </div>
+
+    <img class="circle-1" src="{% static 'assets/lines_1.svg' %}" alt="">
+  </section>
+
+{% endblock %}
+
+{% block 'script' %}
+    <script src="{% static 'js/word.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,129 @@
+:root{
+  --white: #FFFFFF;
+  --black: #282828;
+  --gray-1: #E0E0E0;
+  --gray-2: #646464;
+  --blue-primary: #148CFB;
+  --blue-secondary: #637EFE;
+  --blue-dark: #273266;
+
+  --btn-hover: #148CFC;
+  --btn-pressed: #0B4FCA;
+
+  --gradient-ball-purple: #CD45F3;
+  --gradient-ball-blue: #015DFF;
+  --gradient-ball-cyan: #12E1B7;
+  --gradient-ball: linear-gradient(132deg, var(--gradient-ball-purple) 24.44%, var(--gradient-ball-blue) 59.71%, var(--gradient-ball-cyan) 94.53%);
+  --gradient-btn: linear-gradient(101deg, var(--blue-dark) -43.69%, var(--btn-hover) 119.42%);
+
+  --max-w: 118rem; /*128rem*/
+  --max-w-padding: 0 5rem;
+  font-size: 62.5%;
+}
+
+a{
+  text-decoration: none;
+  color: var(--blue-dark);
+}
+
+li{
+  list-style: none;
+}
+
+.title{
+  color: var(--blue-dark);
+
+  /* Title */
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6.6rem;
+  letter-spacing: -1.2px;
+}
+
+.subtitle{
+  color: var(--blue-dark);
+
+  /* Subtitle */
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.text, li, p{
+  color: var(--blue-dark);
+
+  /* Text */
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: -0.32px;
+}
+
+.text-bold, .btn{
+  color: var(--blue-dark);
+
+  /* Text */
+  font-size: 1.6rem; 
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: -0.32px;
+}
+
+.btn{
+  position: relative;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 8px;
+  background: var(--gradient-btn);
+  color: var(--white);
+
+  transition: all .2s ease;
+
+  &:hover{
+    background: var(--btn-hover);
+    transform: scale(1.05);
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 105%;
+      height: 105%;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+
+      background: #148cfc49;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+
+  &:active{
+    background: var(--btn-pressed);
+  }
+}
+
+.ball-gradient{
+  background: var(--gradient-ball);
+}
+
+/* Glass Effect */
+
+.glass{
+  border: 2px solid linear-gradient(94deg, #FFF 28.83%, rgba(255, 255, 255, 0.00) 102.14%);
+  background: rgba(191, 191, 191, 0.1);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}

@@ -1,0 +1,51 @@
+/* Lines */
+
+.line{
+  max-width: var(--max-w);
+  width: 100%;
+  padding: var(--max-w-padding);
+  height: 2px;
+  background-color: var(--gray-1);
+}
+
+/* Circles */
+
+.circles{
+  position: absolute;
+  z-index: -1;
+}
+
+.ball{
+  position: absolute;
+  z-index: 0;
+}
+
+#circle-1{
+  top: 110rem;
+  left: -60%;
+}
+
+#circle-2{
+  bottom: -50rem;
+  right: -90rem;
+}
+
+/* Ball */
+
+#ball-1{
+  width: 40rem;
+  height: 40rem;
+  border-radius: 40rem;
+
+  bottom: 65rem;
+  left: -25rem;
+}
+
+#ball-2{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 20rem;
+
+  bottom: 140rem;
+  right: -3rem;
+}

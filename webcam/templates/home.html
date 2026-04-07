@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head'%}
+  <link rel="stylesheet" href="{% static 'css/home/home.css' %}">
+{% endblock %}
+
+{% block 'content' %}
+  <section id="section-1">
+    <div class="texts">
+      <h1 class="title">Quebrando Barreiras <br> na Comunicação.</h1>
+      <p>A Língua Brasileira de Sinais (LIBRAS) é essencial para a comunicação da comunidade surda no Brasil, mas ainda há desafios significativos para sua difusão e ensino. 
+        <br><br>
+        Nossa plataforma de reconhecimento de sinais usa inteligência artificial para facilitar o aprendizado e promover a acessibilidade.
+      </p>
+
+      <a href="/word"><button class="btn">Experimente Agora</button></a>
+    </div>
+
+    <img src="{% static 'assets/girl-initial.png' %}" alt="" srcset="">
+  </section>
+
+  <section id="institution" class="glass">
+    <p>Desenvolvido com apoio de:</p>
+    <img src="{% static 'assets/logo_ifba.svg' %}" alt="">
+  </section>
+
+  <section id="section-2">
+    <h1 class="title">O Desafio da <br> Comunidade Surda no Brasil.</h1>
+    <p>Fatos que demonstram a importância da inclusão:</p>
+
+    <div class="dados">
+      <div class="dado">
+        <h1 class="title">+10 mi</h1>
+        <p>de pessoas possuem algum grau de deficiência auditiva no Brasil</p>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="dado">
+        <h1 class="title">22,4%</h1>
+        <p>das pessoas com deficiência auditiva entre 5 e 40 anos usam LIBRAS</p>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="dado">
+        <h1 class="title">7%</h1>
+        <p>da população surda conclui o ensino superior.</p>
+      </div>
+    </div>
+
+    <p>Falta de intérpretes em instituições de ensino também dificultam a aprendizagem. <br>
+      <span class="text-bold">O Estatuto da Pessoa com Deficiência (Lei nº 13.146/2015)</span> garante a acessibilidade, mas a implementação ainda é falha.</p>
+  </section>
+
+  <img id="circle-1" class="circles" src="{% static 'assets/lines_1.svg' %}" alt="" srcset="">
+
+  <section id="section-3">
+
+    <div class="texts">
+      <h1 class="title">Como funciona <br> nossa plataforma?</h1>
+      <p>Nosso sistema utiliza um modelo de inteligência artificial treinado com <span class="text-bold">dados próprios</span>, coletados com a orientação de profissionais de LIBRAS. 
+        <br><br>
+        A metodologia inclui a captura de vídeos de gestos estáticos do alfabeto e o treinamento de um <span class="text-bold">modelo específico</span> para reconhecer os sinais. Dessa forma, garantimos maior <span class="text-bold">precisão</span> e <span class="text-bold">adaptação</span> ao contexto educacional.
+      </p>
+    </div>
+
+    <div class="list">
+      <ul>
+        <li class="item-list">
+          <h1 class="subtitle">1</h1>
+          <p>Ative sua <span class="text-bold">câmera</span> e faça gestos em LIBRAS.</p>
+        </li>
+
+        <li class="item-list">
+          <h1 class="subtitle">2</h1>
+          <p>Nosso <span class="text-bold">modelo de IA</span> analisa os sinais em tempo real.</p>
+        </li>
+
+        <li class="item-list">
+          <h1 class="subtitle">3</h1>
+          <p>O gesto é <span class="text-bold">traduzido</span> para texto na tela.</p>
+        </li>
+      </ul>
+
+      <a href="/word"><button class="btn">Faça um teste</button></a>
+    </div>  
+
+    <img src="{% static 'assets/notebook.png' %}" alt="" srcset="">
+
+    <div class="luz-1"></div>
+    <div class="luz-2"></div>
+  </section>
+
+  <section id="section-4">
+    <h1 class="title">Dúvidas</h1>
+
+    <div id="accordions">
+
+      <div class="accordion">
+        <button class="accordion-header">
+          <span class="text-bold">O projeto substitui um intérprete de LIBRAS?</span>
+          <div class="arrow">
+            <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.0336 0.0800867L13.0512 0.985473L7.50525 5.91689C7.41639 5.99638 7.31072 6.05946 7.19432 6.10251C7.07792 6.14556 6.95309 6.16772 6.82701 6.16772C6.70094 6.16772 6.57611 6.14556 6.45971 6.10251C6.34331 6.05946 6.23764 5.99638 6.14878 5.91689L0.599976 0.985473L1.61758 0.0809393L6.82558 4.70942L12.0336 0.0800867Z" fill=""/>
+            </svg>                
+          </div>
+        </button>
+
+        <div class="accordion-body">
+          <p>Não. O objetivo do projeto não é substituir intérpretes, mas auxiliar no processo de ensino e aprendizagem. A ferramenta funciona como um apoio pedagógico, ajudando estudantes e professores a praticarem e compreenderem os sinais de forma interativa.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header">
+          <span class="text-bold">Quais foram as ferramentas usada para desenvolver a plataforma?</span>
+          <div class="arrow">
+            <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.0336 0.0800867L13.0512 0.985473L7.50525 5.91689C7.41639 5.99638 7.31072 6.05946 7.19432 6.10251C7.07792 6.14556 6.95309 6.16772 6.82701 6.16772C6.70094 6.16772 6.57611 6.14556 6.45971 6.10251C6.34331 6.05946 6.23764 5.99638 6.14878 5.91689L0.599976 0.985473L1.61758 0.0809393L6.82558 4.70942L12.0336 0.0800867Z" fill=""/>
+            </svg>                
+          </div>
+        </button>
+
+        <div class="accordion-body">
+          <p>A ferramenta foi pensada para ser usada por estudantes, professores e instituições de ensino, especialmente em contextos educacionais. Qualquer pessoa interessada em aprender ou praticar LIBRAS pode utilizá-la, mesmo sem conhecimento prévio.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header">
+          <span class="text-bold">Quem pode utilizar a ferramenta?</span>
+          <div class="arrow">
+            <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.0336 0.0800867L13.0512 0.985473L7.50525 5.91689C7.41639 5.99638 7.31072 6.05946 7.19432 6.10251C7.07792 6.14556 6.95309 6.16772 6.82701 6.16772C6.70094 6.16772 6.57611 6.14556 6.45971 6.10251C6.34331 6.05946 6.23764 5.99638 6.14878 5.91689L0.599976 0.985473L1.61758 0.0809393L6.82558 4.70942L12.0336 0.0800867Z" fill=""/>
+            </svg>                
+          </div>
+        </button>
+
+        <div class="accordion-body">
+          <p>JavaScript, CSS, HTML, Python e bibliotecas complementares</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section id="section-5">
+    <div class="texts">
+      <h1 class="title">Junte-se a <br> nós nessa missão</h1>
+      <p>Teste agora mesmo e descubra como a tecnologia pode aproximar pessoas!</p>
+      <a href="/word"><button class="btn">Experimente Agora</button></a>
+    </div>
+
+    <img src="{% static 'assets/boy-end.png' %}" alt="" srcset="">
+  </section>
+
+  <div id="ball-1" class="ball-gradient ball"></div>
+  <div id="ball-2" class="ball-gradient ball"></div>
+
+  <img id="circle-2" class="circles" src="{% static 'assets/lines_1.svg' %}" alt="" srcset="">
+{% endblock %}

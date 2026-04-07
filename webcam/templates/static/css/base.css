@@ -1,0 +1,97 @@
+@import url(./components.css);
+@import url(./animation.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  border: 1px solid #ffffff9a;
+  background: rgba(255, 255, 255, 0.818);
+  box-shadow: 0px -3px 20px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+
+  z-index: 10;
+} 
+
+nav{
+  width: 100%;
+  max-width: var(--max-w);
+  padding: var(--max-w-padding);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    li a{
+      transition: all .2s ease;
+    }
+
+    li a:hover{
+      color: var(--blue-secondary);
+    }
+  }
+}
+
+/* Main */
+
+main{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* Section */
+
+section{
+  max-width: var(--max-w);
+  padding: var(--max-w-padding);
+  width: 100%;
+}
+
+/* Footer */
+
+footer{ 
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--blue-dark);
+
+  p{
+    color: var(--white);
+  }
+}

@@ -1,0 +1,47 @@
+/* Animação das Luzes - Seção 3 */
+
+@keyframes luz-1 {
+  0%{
+    left: 4rem;
+    bottom: 4rem;
+  }
+  25%{
+    left: 100%;
+    bottom: 100%;
+  }
+  50%{
+    left: 100%;
+    bottom: 4rem;
+  }
+  75%{
+    left: 4rem;
+    bottom: 100%;
+  }
+  100%{
+    left: 4rem;
+    bottom: 4rem;
+  }
+}
+
+@keyframes luz-2 {
+  0%{
+    right: 4rem;
+    top: 4rem;
+  }
+  25%{
+    right: 100%;
+    top: 100%;
+  }
+  50%{
+    right: 100%;
+    top: 4rem;
+  }
+  75%{
+    right: 4rem;
+    top: 100%;
+  }
+  100%{
+    right: 4rem;
+    top: 4rem;
+  }
+} 

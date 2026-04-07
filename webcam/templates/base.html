@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+  <link rel="icon" href="{% static 'assets/favicon-light.svg' %}" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="{% static 'assets/favicon-dark.svg' %}" media="(prefers-color-scheme: dark)">
+
+  {% block 'head' %}
+  {% endblock %}
+
+  <title>+Libras</title>
+
+</head>
+<body>
+
+  <header>
+    <nav>      
+      <a href="/"><img src="{% static 'assets/logotipo.svg' %}" alt="logotipo" srcset=""></a>
+  
+      <ul>
+        <li class="text-bold"><a href="D:\Developments\TCC\Projeto Libras - Oficial\Modelo_Reconhecimento.zip" download="">Baixar modelo</a></li>
+        <li class="text-bold"><a href="">TCC Escrito</a></li>
+        <li id="app-model" class="text-bold">
+          <button class="accordion-header">
+            <span class="text-bold" >Teste agora</span>
+            <div class="arrow">
+              <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0336 0.0800867L13.0512 0.985473L7.50525 5.91689C7.41639 5.99638 7.31072 6.05946 7.19432 6.10251C7.07792 6.14556 6.95309 6.16772 6.82701 6.16772C6.70094 6.16772 6.57611 6.14556 6.45971 6.10251C6.34331 6.05946 6.23764 5.99638 6.14878 5.91689L0.599976 0.985473L1.61758 0.0809393L6.82558 4.70942L12.0336 0.0800867Z" fill=""/>
+              </svg>                
+            </div>
+          </button>
+
+          <div class="accordion-body">
+            <ul>
+              <li><a href="/word">Formador de palavras</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    {% block 'content' %}
+    {% endblock %}
+
+  </main>
+  
+  <footer>
+    <p>© 2024 Reconhecimento de LIBRAS - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="{% static 'js/base.js' %}"></script>
+
+  {% block 'script' %}
+  {% endblock %}
+
+</body>
+</html>
