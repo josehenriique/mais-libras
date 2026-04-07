@@ -1,3 +1,5 @@
+![alt text](image.png)
+
 # +Libras 🤟
 
 Sistema inteligente de reconhecimento de sinais em LIBRAS (Língua Brasileira de Sinais), desenvolvido com foco em acessibilidade, inclusão e apoio pedagógico em ambientes educacionais.
