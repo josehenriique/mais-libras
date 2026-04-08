@@ -7,9 +7,9 @@ Sistema inteligente de reconhecimento de sinais em LIBRAS (Língua Brasileira de
 ## 📸 Preview
 
 ![alt text](images/image_1.png)
-<p align="center" style="display:flex; flex-direction:row; gap: 20px; width: calc(100% - 20px)">
-  <img src="images/video_1.gif" width="50%" />
-  <img src="images/video_2.gif" width="50%" />
+<p align="center">
+  <img src="images/video_1.gif" width="48%" />
+  <img src="images/video_2.gif" width="48%" />
 </p>
 
 ---
