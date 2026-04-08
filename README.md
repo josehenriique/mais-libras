@@ -1,9 +1,12 @@
-![alt text](image.png)
-
 # +Libras 🤟
 
 Sistema inteligente de reconhecimento de sinais em LIBRAS (Língua Brasileira de Sinais), desenvolvido com foco em acessibilidade, inclusão e apoio pedagógico em ambientes educacionais.
 
+---
+
+## 📸 Preview
+
+![alt text](images/image1.png) ![alt text](images/video_demonstracao.gif)
 ---
 
 ## 📌 Sobre o Projeto
@@ -12,47 +15,67 @@ O **+Libras** é uma aplicação que utiliza **Visão Computacional** e **Inteli
 
 O projeto surge como uma solução para auxiliar no ensino e aprendizado da língua de sinais, promovendo inclusão e facilitando a comunicação entre pessoas surdas e ouvintes no ambiente educacional.
 
+Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) do curso técnico em informática do IFBA (Instituto Federal de Educação, Ciência e Tecnologia da Bahia).
+
+
+> [!NOTE]
+> O documento completo do Trabalho de Conclusão de Curso (TCC) está disponível em:
+>
+> 📄 [`Detecção de Letras - TCC.pdf`](docs/TCC-escrito.pdf)
+
+---
+
+## 📚 Contexto Acadêmico
+
+Este projeto foi desenvolvido em equipe.
+
+> [!IMPORTANT]
+> Atuei como responsável pela aplicação web, sendo integralmente responsável por:
+
+- 🎨 UI Design completo (estrutura, identidade visual e experiência do usuário)
+- 🌐 Desenvolvimento da Landing Page
+- 💻 Implementação da aplicação web com Python/Django
+- 🤟 Desenvolvimento da funcionalidade de reconhecimento de gestos para formação de palavras
+
 ---
 
 ## 🎯 Objetivo
 
 Desenvolver uma ferramenta capaz de:
 
-* Reconhecer sinais em LIBRAS em tempo real
-* Auxiliar professores e alunos no processo de aprendizagem
-* Promover acessibilidade e inclusão
-* Aplicar conceitos de IA em um contexto social relevante
+- Reconhecer sinais estáticos em LIBRAS em tempo real
+- Auxiliar professores e alunos no processo de aprendizagem
+- Promover acessibilidade e inclusão
+- Aplicar conceitos de IA em um contexto social relevante
+
+---
+
+## ⚙️ Como Funciona
+
+1. A webcam captura os movimentos das mãos do usuário  
+2. O MediaPipe identifica pontos-chave (landmarks) das mãos  
+3. Os dados são processados e enviados para o modelo de IA  
+4. O modelo realiza a previsão do sinal em LIBRAS  
+5. O resultado é exibido em tempo real na interface  
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
 ### 🧠 Inteligência Artificial
-
-* Python
-* TensorFlow
-* Keras
-* NumPy
+- Python  
+- TensorFlow  
+- Keras  
+- NumPy  
 
 ### 👁️ Visão Computacional
-
-* OpenCV
-* MediaPipe
+- OpenCV  
+- MediaPipe  
 
 ### 🌐 Web
-
-* Django
-* HTML / CSS / JavaScript
-
----
-
-## ⚙️ Como Funciona
-
-1. A webcam captura os movimentos das mãos do usuário
-2. O MediaPipe identifica pontos-chave (landmarks) das mãos
-3. Esses dados são processados e enviados para o modelo de IA
-4. O modelo realiza a previsão do sinal em LIBRAS
-5. O resultado é exibido em tempo real na interface
+- Django  
+- HTML / CSS / JavaScript
+- GSAP (GreenSock Animation Platform) — transições suaves no scroll
 
 ---
 
@@ -60,66 +83,29 @@ Desenvolver uma ferramenta capaz de:
 
 Diferente de muitas soluções, o modelo utilizado no +Libras foi:
 
-* Treinado **do zero**
-* Utilizando dados coletados pela equipe
-* Com validação baseada em sinais reais de LIBRAS
+- Treinado **do zero**  
+- Utilizando dados coletados pela equipe  
+- Validado com sinais reais de LIBRAS  
 
-Arquivo do modelo:
-
+📁 Arquivo do modelo:
 ```
-webcam/models/tcc_info_2025.task
-```
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-+Libras/
-│
-├── applicationWebCam/     # Configurações principais do Django
-├── webcam/                # App principal
-│   ├── models/            # Modelo de IA (.task)
-│   ├── templates/         # Interface web
-│   ├── views.py
-│   └── ...
-│
-├── manage.py
-├── requirements.txt
-└── README.md
+webcam/tcc_info_2025.task
 ```
 
 ---
 
 ## 📈 Possíveis Melhorias
 
-* Expansão do vocabulário de sinais
-* Treinamento com mais usuários
-* Versão mobile
-* API para integração com outras plataformas
-* Interface mais interativa
+- Reconhecimento de gestos em movimento  
+- Expansão do vocabulário de sinais  
+- Treinamento com mais usuários  
+- Versão mobile  
+- API para integração com outras plataformas  
+- Interface mais interativa  
 
 ---
 
-## 🤝 Contribuição
+## 👤 Autor
 
-Contribuições são bem-vindas!
-
-1. Fork o projeto
-2. Crie uma branch (`feature/minha-feature`)
-3. Commit suas alterações
-4. Push para a branch
-5. Abra um Pull Request
-
----
-
-## 📚 Contexto Acadêmico
-
-Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) no IFBA, com foco na aplicação prática de Inteligência Artificial para impacto social.
-
----
-
-## 👨‍💻 Autor
-
-**José Henrique**
-Designer & Desenvolvedor
+**José Henrique**  
+Designer & Desenvolvedor Web

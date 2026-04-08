@@ -41,16 +41,7 @@ def recognizer_frames():
       try:
         data_ = recognizer.recognize_for_video(mp_image, timestamp)        
 
-        # print(data_)
-        # print(data_.gestures)
-
         for gesture in data_.gestures:
-
-          # Entendendo a organização do Gesture
-          # print("Gesture : "+str(gesture))
-          # print("Category : "+str(gesture[0]))
-          # print("Sinal em lista: "+str([category.category_name for category in gesture]))
-          # print("Sinal: "+str([category.category_name for category in gesture][0]))
 
           response = str([category.category_name for category in gesture][0])
           if response.lower() != 'none':
@@ -67,7 +58,7 @@ def recognizer_frames():
 
       except Exception as e: 
         response = e
-        print('Tipo : {}/ Valor : {}'.format(type(response),response) )
+        print('Tipo : {}/ Valor : {}'.format(type(response), response) )
         response = "Não consegui compreender o sinal."
       
       success, buffer = cv2.imencode('.jpg', frame)
